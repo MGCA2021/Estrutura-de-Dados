@@ -7,14 +7,14 @@ public class AC1Test {
     @Test
 	public void arrayTest() {
 		AC1 a = new AC1();
-		//testar se o maior é 940
+		//testar se o maior Ã© 940.
         assertEquals("O Maior Numero 940", 940, a.maior());
 
-		//testar se o menor é 510
+		//testar se o menor Ã© 510
         assertEquals("O menor deve ser 510", 510, a.menor());
 
-		//testar se a soma é 7540
-        assertEquals("A soma é 7540", 7540, a.soma());
+		//testar se a soma Ã© 7540
+        assertEquals("A soma Ã© 7540", 7540, a.soma());
 		
 		//testar a quantidade de vezes que o numero 3 aparece
         assertEquals("3 aparece 0 vezes", 0, a.repeticoes(3));
