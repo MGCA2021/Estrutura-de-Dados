@@ -1,10 +1,11 @@
 /** Grupo 4 - Matheus de Jesus Oliveira, Gabriela Rodrigues Oliveira, Alessandro Lira Novaes, Caroline Andrade Silva
  * 	      OBS. Caroline é do nosso grupo porém nessa ac em específico não ajudou.
  */
-package AtividadeContinua;
+package atividadecontinua;
 import java.util.Arrays;
 
 public class AC1 {
+	
     static int[] vetor = {940, 880, 830, 790, 750, 660, 650, 590, 510, 940};
 	
     public int maior(){
