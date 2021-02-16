@@ -1,5 +1,5 @@
 /** Grupo 4 - Matheus de Jesus Oliveira, Gabriela Rodrigues Oliveira, Alessandro Lira Novaes, Caroline Andrade Silva
- *  OBS. Caroline é do nosso grupo porém nessa ac em específico não ajudou.
+ *  OBS. Caroline Ã© do nosso grupo porÃ©m nessa ac em especÃ­fico nÃ£o ajudou.
  */
 package atividadecontinua;
 import java.util.Arrays;
@@ -45,10 +45,10 @@ public class AC1 {
     public static void main(String[] args) {
         AC1 ac1 = new AC1();
         
-		System.out.println("o Menor Numero : "+ ac1.menor());
-		System.out.println("O Maior Numero : "+ ac1.maior());
-        System.out.println("A soma é : "+ ac1.soma());
-        System.out.println("O número 940 aparece 2 vezes : " + ac1.repeticoes(940));
+	System.out.println("o Menor Numero : "+ ac1.menor());
+	System.out.println("O Maior Numero : "+ ac1.maior());
+        System.out.println("A soma Ã© : "+ ac1.soma());
+        System.out.println("O nÃºmero 940 aparece 2 vezes : " + ac1.repeticoes(940));
 
     }
 }
