@@ -1,5 +1,5 @@
 /** Grupo 4 - Matheus de Jesus Oliveira, Gabriela Rodrigues Oliveira, Alessandro Lira Novaes, Caroline Andrade Silva
- * 
+ * 	      OBS. Caroline é do nosso grupo porém nessa ac em específico não ajudou.
  */
 package AtividadeContinua;
 import java.util.Arrays;
