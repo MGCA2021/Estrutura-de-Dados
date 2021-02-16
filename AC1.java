@@ -1,4 +1,4 @@
-/**
+/** Grupo 4 - Matheus de Jesus Oliveira, Gabriela Rodrigues Oliveira, Alessandro Lira Novaes, Caroline Andrade Silva
  * 
  */
 package AtividadeContinua;
