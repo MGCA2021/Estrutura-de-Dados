@@ -195,7 +195,7 @@ public class LinkedTree<E> implements Tree<E> {
 		return s;
 
 	}
-	public int diskSpace(LinkedTree<DiscNode> T, TreePosition<DiscNode> v) {
+	/*public int diskSpace(LinkedTree<DiscNode> T, TreePosition<DiscNode> v) {
 		int s = v.element().getKbytes(); // inicia com o tamanho do próprio nodo
 		for (Position<DiscNode> w : v.getChildren()) {
 			
@@ -210,6 +210,6 @@ public class LinkedTree<E> implements Tree<E> {
 		}
 		return s;
 
-		}
+		}*/
 	
 }

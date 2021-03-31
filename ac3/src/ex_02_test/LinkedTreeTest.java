@@ -25,38 +25,39 @@ class LinkedTreeTest {
 		assertFalse(T.isEmpty());
 	//	assertEquals(4, T.height1(T), "Altura da Árvore T");
 	//	assertEquals(4, T.height2(T, T.root()), "Altura da Árvore T");
-		assertEquals("[Eletronics R'Us, P&D, Vendas, Internacional, Canadá, América do Sul, "
-+ "Ultramar, África, Europa, Ásia, Austrália, Nacional, Compras, Manufatura, TV, CD, Tuner]",
+		assertEquals("[Concessionaria, Bugs, Carros, Volkswagen, Jetta, Golf, "
++ "Voyage, G4, G5, G6, G7, Chevrolet, Triciculo, Motos, XJ6, S1000, Hornet]",
 T.toString(), "Pré-ordem da Árvore T ");
 
 		raiz = T.root();
 		filhos = raiz.getChildren();
 
 		p = filhos.first();
-		assertEquals("P&D", p.element().element(), "P&D");
+		assertEquals("Bugs", p.element().element(), "Bugs");
 		assertTrue(T.isExternal(p.element()));
 		assertEquals(raiz, T.parent(p.element()), "Deve ser a raiz");
 
 		s = filhos.next(p);
-		assertEquals("Vendas", s.element().element(), "Vendas");
+		assertEquals("Carros", s.element().element(), "Carros");
 		assertTrue(T.isInternal(s.element()));
 	//	assertEquals(1, T.depth(T, s.element()), "");
 
-		T.replace(p.element(), "Pesquisa e Desenvolvimento");
+		T.replace(p.element(), "Vans");
 
-		assertEquals("[Eletronics R'Us, Pesquisa e Desenvolvimento, Vendas, Internacional, Canadá, América do Sul, "
-+ "Ultramar, África, Europa, Ásia, Austrália, Nacional, Compras, Manufatura, TV, CD, Tuner]",
+		assertEquals("[Concessionaria, Vans, Carros, Volkswagen, Jetta, Golf, "
+				+ "Voyage, G4, G5, G6, G7, Chevrolet, Triciculo, Motos, XJ6, S1000, Hornet]",
 T.toString(), "Pré-ordem da Árvore T ");
 
 		assertTrue(T.isRoot(raiz));
 		T.swapElements(p.element(), s.element());
 
-		assertEquals("[Eletronics R'Us, Vendas, Pesquisa e Desenvolvimento, Internacional, Canadá, América do Sul, "
-+ "Ultramar, África, Europa, Ásia, Austrália, Nacional, Compras, Manufatura, TV, CD, Tuner]",
+		assertEquals("[Concessionaria, Carros, Vans, Volkswagen, Jetta, Golf, "
+				+ "Voyage, G4, G5, G6, G7, Chevrolet, Triciculo, Motos, XJ6, S1000, Hornet]",
 T.toString(), "Pré-ordem da Árvore T ");
 
+	
+	
 	}
-
 	private TreeNode<String> criarFilho(TreeNode<String> p, String n) {
 		PositionList<Position<String>> filhos;
 		TreeNode<String> aux;
@@ -76,35 +77,35 @@ T.toString(), "Pré-ordem da Árvore T ");
 	public LinkedTree<String> criarArvoreT() {
 		LinkedTree<String> T = new LinkedTree<String>();
 		TreeNode<String> raiz, v, m, i, u;
-		T.addRoot("Eletronics R'Us");
+		T.addRoot("Concessionaria");
 		raiz = (TreeNode<String>) T.root();
 		raiz.setChildren(new NodePositionList<Position<String>>());
 
 		// Filhos da raiz: Eletronic R'Us
-		criarFilho(raiz, "P&D");
-		v = criarFilho(raiz, "Vendas");
-		criarFilho(raiz, "Compras");
-		m = criarFilho(raiz, "Manufatura");
+		criarFilho(raiz, "Bugs");
+		v = criarFilho(raiz, "Carros");
+		criarFilho(raiz, "Triciculo");
+		m = criarFilho(raiz, "Motos");
 
 		// Filhos de Vendas
-		i = criarFilho(v, "Internacional");
-		criarFilho(v, "Nacional");
+		i = criarFilho(v, "Volkswagen");
+		criarFilho(v, "Chevrolet");
 
 		// Filhos de Internacional
-		criarFilho(i, "Canadá");
-		criarFilho(i, "América do Sul");
-		u = criarFilho(i, "Ultramar");
+		criarFilho(i, "Jetta");
+		criarFilho(i, "Golf");
+		u = criarFilho(i, "Voyage");
 
 		// Filhos de Ultramar
-		criarFilho(u, "África");
-		criarFilho(u, "Europa");
-		criarFilho(u, "Ásia");
-		criarFilho(u, "Austrália");
+		criarFilho(u, "G4");
+		criarFilho(u, "G5");
+		criarFilho(u, "G6");
+		criarFilho(u, "G7");
 
 		// Filhos de Manufatura
-		criarFilho(m, "TV");
-		criarFilho(m, "CD");
-		criarFilho(m, "Tuner");
+		criarFilho(m, "XJ6");
+		criarFilho(m, "S1000");
+		criarFilho(m, "Hornet");
 		return T;
 
 	}
